@@ -1,0 +1,1705 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Braeden Lord — Leadership Coaching Canvas</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <style>
+
+    :root {
+
+      --navy: #1C2B4A;
+
+      --navy-mid: #2A3F6A;
+
+      --navy-light: #3D5A8A;
+
+      --gold: #B8903A;
+
+      --gold-light: #D4AE60;
+
+      --gold-pale: #F5EDD8;
+
+      --cream: #FAF7F2;
+
+      --ink: #1A1A1A;
+
+      --muted: #6B7280;
+
+      --rule: #D6CEBC;
+
+      --white: #FFFFFF;
+
+    }
+
+ 
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+ 
+
+    body {
+
+      background: var(--cream);
+
+      color: var(--ink);
+
+      font-family: 'DM Sans', sans-serif;
+
+      font-size: 14px;
+
+      line-height: 1.65;
+
+      min-height: 100vh;
+
+    }
+
+ 
+
+    /* ── HEADER ── */
+
+    .masthead {
+
+      background: var(--navy);
+
+      padding: 48px 64px 40px;
+
+      position: relative;
+
+      overflow: hidden;
+
+    }
+
+ 
+
+    .masthead::before {
+
+      content: '';
+
+      position: absolute;
+
+      top: -60px; right: -60px;
+
+      width: 300px; height: 300px;
+
+      border-radius: 50%;
+
+      background: radial-gradient(circle, rgba(184,144,58,0.18) 0%, transparent 70%);
+
+      pointer-events: none;
+
+    }
+
+ 
+
+    .masthead::after {
+
+      content: '';
+
+      position: absolute;
+
+      bottom: 0; left: 0; right: 0;
+
+      height: 3px;
+
+      background: linear-gradient(90deg, var(--gold) 0%, var(--gold-light) 50%, transparent 100%);
+
+    }
+
+ 
+
+    .masthead-meta {
+
+      font-family: 'DM Mono', monospace;
+
+      font-size: 10px;
+
+      letter-spacing: 0.18em;
+
+      text-transform: uppercase;
+
+      color: var(--gold-light);
+
+      margin-bottom: 16px;
+
+      opacity: 0.85;
+
+    }
+
+ 
+
+    .masthead-name {
+
+      font-family: 'Cormorant Garamond', serif;
+
+      font-size: 56px;
+
+      font-weight: 300;
+
+      color: var(--white);
+
+      line-height: 1.05;
+
+      letter-spacing: -0.01em;
+
+      margin-bottom: 8px;
+
+    }
+
+ 
+
+    .masthead-title {
+
+      font-family: 'Cormorant Garamond', serif;
+
+      font-size: 20px;
+
+      font-weight: 400;
+
+      font-style: italic;
+
+      color: var(--gold-light);
+
+      margin-bottom: 28px;
+
+    }
+
+ 
+
+    .masthead-tags {
+
+      display: flex;
+
+      gap: 10px;
+
+      flex-wrap: wrap;
+
+    }
+
+ 
+
+    .tag {
+
+      display: inline-block;
+
+      padding: 4px 12px;
+
+      border: 1px solid rgba(184,144,58,0.4);
+
+      border-radius: 2px;
+
+      font-size: 10px;
+
+      letter-spacing: 0.12em;
+
+      text-transform: uppercase;
+
+      color: var(--gold-light);
+
+      font-family: 'DM Mono', monospace;
+
+    }
+
+ 
+
+    /* ── MAIN GRID ── */
+
+    .canvas-body {
+
+      padding: 0 64px 80px;
+
+    }
+
+ 
+
+    /* ── SECTION WRAPPER ── */
+
+    .section {
+
+      padding: 44px 0;
+
+      border-bottom: 1px solid var(--rule);
+
+      animation: fadeUp 0.6s ease both;
+
+    }
+
+ 
+
+    .section:last-child { border-bottom: none; }
+
+ 
+
+    @keyframes fadeUp {
+
+      from { opacity: 0; transform: translateY(16px); }
+
+      to   { opacity: 1; transform: translateY(0); }
+
+    }
+
+ 
+
+    .section:nth-child(1)  { animation-delay: 0.05s; }
+
+    .section:nth-child(2)  { animation-delay: 0.10s; }
+
+    .section:nth-child(3)  { animation-delay: 0.15s; }
+
+    .section:nth-child(4)  { animation-delay: 0.20s; }
+
+    .section:nth-child(5)  { animation-delay: 0.25s; }
+
+    .section:nth-child(6)  { animation-delay: 0.30s; }
+
+    .section:nth-child(7)  { animation-delay: 0.35s; }
+
+    .section:nth-child(8)  { animation-delay: 0.40s; }
+
+ 
+
+    .section-label {
+
+      font-family: 'DM Mono', monospace;
+
+      font-size: 10px;
+
+      letter-spacing: 0.20em;
+
+      text-transform: uppercase;
+
+      color: var(--gold);
+
+      margin-bottom: 20px;
+
+      display: flex;
+
+      align-items: center;
+
+      gap: 12px;
+
+    }
+
+ 
+
+    .section-label::after {
+
+      content: '';
+
+      flex: 0 0 40px;
+
+      height: 1px;
+
+      background: var(--gold);
+
+      opacity: 0.4;
+
+    }
+
+ 
+
+    .section-heading {
+
+      font-family: 'Cormorant Garamond', serif;
+
+      font-size: 30px;
+
+      font-weight: 400;
+
+      color: var(--navy);
+
+      line-height: 1.2;
+
+      margin-bottom: 20px;
+
+    }
+
+ 
+
+    .section-body {
+
+      max-width: 780px;
+
+      color: #3D3D3D;
+
+      font-weight: 300;
+
+      font-size: 14.5px;
+
+    }
+
+ 
+
+    /* ── TWO-COL LAYOUT ── */
+
+    .two-col {
+
+      display: grid;
+
+      grid-template-columns: 1fr 1fr;
+
+      gap: 48px;
+
+      margin-top: 4px;
+
+    }
+
+ 
+
+    .three-col {
+
+      display: grid;
+
+      grid-template-columns: 1fr 1fr 1fr;
+
+      gap: 36px;
+
+      margin-top: 4px;
+
+    }
+
+ 
+
+    /* ── BLOCK ELEMENTS ── */
+
+    .block-label {
+
+      font-family: 'DM Mono', monospace;
+
+      font-size: 10px;
+
+      letter-spacing: 0.14em;
+
+      text-transform: uppercase;
+
+      color: var(--muted);
+
+      margin-bottom: 10px;
+
+    }
+
+ 
+
+    .block-heading {
+
+      font-family: 'Cormorant Garamond', serif;
+
+      font-size: 19px;
+
+      font-weight: 600;
+
+      color: var(--navy);
+
+      margin-bottom: 10px;
+
+      line-height: 1.25;
+
+    }
+
+ 
+
+    .block-body {
+
+      font-size: 13.5px;
+
+      font-weight: 300;
+
+      color: #4A4A4A;
+
+      line-height: 1.7;
+
+    }
+
+ 
+
+    /* ── PULL QUOTE ── */
+
+    .pull-quote {
+
+      border-left: 3px solid var(--gold);
+
+      padding: 16px 24px;
+
+      margin: 28px 0;
+
+      background: var(--gold-pale);
+
+      border-radius: 0 4px 4px 0;
+
+    }
+
+ 
+
+    .pull-quote p {
+
+      font-family: 'Cormorant Garamond', serif;
+
+      font-size: 18px;
+
+      font-style: italic;
+
+      font-weight: 400;
+
+      color: var(--navy);
+
+      line-height: 1.5;
+
+    }
+
+ 
+
+    /* ── SCORE MATRIX ── */
+
+    .score-grid {
+
+      display: grid;
+
+      grid-template-columns: repeat(3, 1fr);
+
+      gap: 3px;
+
+      margin-top: 8px;
+
+      background: var(--rule);
+
+      border: 1px solid var(--rule);
+
+    }
+
+ 
+
+    .score-cell {
+
+      background: var(--white);
+
+      padding: 16px 18px;
+
+      transition: background 0.2s;
+
+    }
+
+ 
+
+    .score-cell:hover {
+
+      background: #F0EDE7;
+
+    }
+
+ 
+
+    .score-cell-label {
+
+      font-family: 'DM Mono', monospace;
+
+      font-size: 9px;
+
+      letter-spacing: 0.12em;
+
+      text-transform: uppercase;
+
+      color: var(--muted);
+
+      margin-bottom: 8px;
+
+    }
+
+ 
+
+    .score-cell-score {
+
+      font-family: 'Cormorant Garamond', serif;
+
+      font-size: 34px;
+
+      font-weight: 300;
+
+      color: var(--navy);
+
+      line-height: 1;
+
+      margin-bottom: 4px;
+
+    }
+
+ 
+
+    .score-cell-score span {
+
+      font-size: 14px;
+
+      color: var(--muted);
+
+    }
+
+ 
+
+    .score-bar-track {
+
+      height: 3px;
+
+      background: var(--rule);
+
+      border-radius: 2px;
+
+      margin: 8px 0;
+
+      overflow: hidden;
+
+    }
+
+ 
+
+    .score-bar-fill {
+
+      height: 100%;
+
+      border-radius: 2px;
+
+      background: linear-gradient(90deg, var(--navy-light), var(--gold));
+
+      transition: width 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+
+    }
+
+ 
+
+    .score-cell-note {
+
+      font-size: 11.5px;
+
+      color: var(--muted);
+
+      line-height: 1.5;
+
+      font-weight: 300;
+
+    }
+
+ 
+
+    /* ── OBJECTIVE CARDS ── */
+
+    .obj-card {
+
+      background: var(--white);
+
+      border: 1px solid var(--rule);
+
+      padding: 28px 28px 24px;
+
+      position: relative;
+
+      transition: box-shadow 0.2s, transform 0.2s;
+
+    }
+
+ 
+
+    .obj-card:hover {
+
+      box-shadow: 0 6px 24px rgba(28,43,74,0.10);
+
+      transform: translateY(-2px);
+
+    }
+
+ 
+
+    .obj-card::before {
+
+      content: '';
+
+      position: absolute;
+
+      top: 0; left: 0; right: 0;
+
+      height: 3px;
+
+    }
+
+ 
+
+    .obj-card.obj-1::before { background: var(--navy); }
+
+    .obj-card.obj-2::before { background: var(--gold); }
+
+    .obj-card.obj-3::before { background: var(--navy-light); }
+
+ 
+
+    .obj-number {
+
+      font-family: 'Cormorant Garamond', serif;
+
+      font-size: 42px;
+
+      font-weight: 300;
+
+      color: var(--rule);
+
+      line-height: 1;
+
+      margin-bottom: 12px;
+
+    }
+
+ 
+
+    .obj-title {
+
+      font-family: 'Cormorant Garamond', serif;
+
+      font-size: 21px;
+
+      font-weight: 600;
+
+      color: var(--navy);
+
+      margin-bottom: 10px;
+
+    }
+
+ 
+
+    .obj-body {
+
+      font-size: 13px;
+
+      font-weight: 300;
+
+      color: #4A4A4A;
+
+      line-height: 1.65;
+
+      margin-bottom: 16px;
+
+    }
+
+ 
+
+    .obj-indicator-label {
+
+      font-family: 'DM Mono', monospace;
+
+      font-size: 9.5px;
+
+      letter-spacing: 0.12em;
+
+      text-transform: uppercase;
+
+      color: var(--gold);
+
+      margin-bottom: 8px;
+
+    }
+
+ 
+
+    .obj-indicator {
+
+      font-size: 12px;
+
+      font-weight: 300;
+
+      color: var(--muted);
+
+      line-height: 1.6;
+
+    }
+
+ 
+
+    /* ── DEVELOPMENT EDGE ── */
+
+    .edge-box {
+
+      background: var(--navy);
+
+      padding: 32px 36px;
+
+      margin-top: 4px;
+
+      position: relative;
+
+      overflow: hidden;
+
+    }
+
+ 
+
+    .edge-box::before {
+
+      content: '';
+
+      position: absolute;
+
+      right: -20px; top: -20px;
+
+      width: 160px; height: 160px;
+
+      border-radius: 50%;
+
+      background: radial-gradient(circle, rgba(184,144,58,0.12) 0%, transparent 70%);
+
+    }
+
+ 
+
+    .edge-box p {
+
+      font-family: 'Cormorant Garamond', serif;
+
+      font-size: 18px;
+
+      font-weight: 300;
+
+      font-style: italic;
+
+      color: rgba(255,255,255,0.88);
+
+      line-height: 1.6;
+
+      max-width: 720px;
+
+    }
+
+ 
+
+    .edge-box strong {
+
+      color: var(--gold-light);
+
+      font-style: normal;
+
+      font-weight: 500;
+
+    }
+
+ 
+
+    /* ── TIMELINE ── */
+
+    .timeline {
+
+      position: relative;
+
+      padding-left: 28px;
+
+      margin-top: 8px;
+
+    }
+
+ 
+
+    .timeline::before {
+
+      content: '';
+
+      position: absolute;
+
+      left: 6px; top: 8px; bottom: 8px;
+
+      width: 1px;
+
+      background: linear-gradient(to bottom, var(--gold), var(--navy-light));
+
+    }
+
+ 
+
+    .timeline-item {
+
+      position: relative;
+
+      margin-bottom: 28px;
+
+    }
+
+ 
+
+    .timeline-item:last-child { margin-bottom: 0; }
+
+ 
+
+    .timeline-item::before {
+
+      content: '';
+
+      position: absolute;
+
+      left: -25px;
+
+      top: 6px;
+
+      width: 10px; height: 10px;
+
+      border-radius: 50%;
+
+      background: var(--white);
+
+      border: 2px solid var(--gold);
+
+    }
+
+ 
+
+    .timeline-date {
+
+      font-family: 'DM Mono', monospace;
+
+      font-size: 10px;
+
+      letter-spacing: 0.12em;
+
+      text-transform: uppercase;
+
+      color: var(--gold);
+
+      margin-bottom: 4px;
+
+    }
+
+ 
+
+    .timeline-session {
+
+      font-family: 'Cormorant Garamond', serif;
+
+      font-size: 18px;
+
+      font-weight: 600;
+
+      color: var(--navy);
+
+      margin-bottom: 4px;
+
+    }
+
+ 
+
+    .timeline-desc {
+
+      font-size: 13px;
+
+      font-weight: 300;
+
+      color: var(--muted);
+
+      line-height: 1.55;
+
+    }
+
+ 
+
+    /* ── QUESTION CARD ── */
+
+    .question-list {
+
+      display: flex;
+
+      flex-direction: column;
+
+      gap: 12px;
+
+      margin-top: 8px;
+
+    }
+
+ 
+
+    .question-item {
+
+      display: flex;
+
+      gap: 16px;
+
+      align-items: flex-start;
+
+      padding: 14px 18px;
+
+      background: var(--white);
+
+      border: 1px solid var(--rule);
+
+      transition: border-color 0.2s;
+
+    }
+
+ 
+
+    .question-item:hover {
+
+      border-color: var(--gold);
+
+    }
+
+ 
+
+    .q-mark {
+
+      font-family: 'Cormorant Garamond', serif;
+
+      font-size: 22px;
+
+      font-weight: 300;
+
+      color: var(--gold);
+
+      line-height: 1;
+
+      flex-shrink: 0;
+
+      margin-top: 1px;
+
+    }
+
+ 
+
+    .q-text {
+
+      font-size: 14px;
+
+      font-weight: 300;
+
+      color: #3D3D3D;
+
+      font-style: italic;
+
+      line-height: 1.55;
+
+    }
+
+ 
+
+    /* ── STRENGTHS / WATCH ── */
+
+    .pill-row {
+
+      display: flex;
+
+      flex-wrap: wrap;
+
+      gap: 8px;
+
+      margin-top: 6px;
+
+    }
+
+ 
+
+    .pill {
+
+      padding: 6px 14px;
+
+      font-size: 12px;
+
+      font-weight: 400;
+
+      border-radius: 2px;
+
+      letter-spacing: 0.02em;
+
+    }
+
+ 
+
+    .pill-strength {
+
+      background: #E8F0E4;
+
+      color: #2D5016;
+
+      border: 1px solid #C0D8B0;
+
+    }
+
+ 
+
+    .pill-watch {
+
+      background: #FEF3E2;
+
+      color: #7A4A00;
+
+      border: 1px solid #E8CDA0;
+
+    }
+
+ 
+
+    .pill-focus {
+
+      background: var(--gold-pale);
+
+      color: var(--navy);
+
+      border: 1px solid var(--gold-light);
+
+    }
+
+ 
+
+    /* ── FOOTER ── */
+
+    .canvas-footer {
+
+      background: var(--navy);
+
+      padding: 24px 64px;
+
+      display: flex;
+
+      justify-content: space-between;
+
+      align-items: center;
+
+    }
+
+ 
+
+    .footer-credit {
+
+      font-family: 'DM Mono', monospace;
+
+      font-size: 10px;
+
+      letter-spacing: 0.12em;
+
+      color: rgba(255,255,255,0.35);
+
+      text-transform: uppercase;
+
+    }
+
+ 
+
+    .footer-date {
+
+      font-family: 'DM Mono', monospace;
+
+      font-size: 10px;
+
+      letter-spacing: 0.12em;
+
+      color: rgba(184,144,58,0.6);
+
+      text-transform: uppercase;
+
+    }
+
+ 
+
+    /* ── RESPONSIVE ── */
+
+    @media (max-width: 860px) {
+
+      .masthead { padding: 36px 32px 30px; }
+
+      .canvas-body { padding: 0 32px 60px; }
+
+      .masthead-name { font-size: 40px; }
+
+      .two-col, .three-col { grid-template-columns: 1fr; }
+
+      .score-grid { grid-template-columns: 1fr 1fr; }
+
+      .canvas-footer { padding: 20px 32px; flex-direction: column; gap: 8px; text-align: center; }
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+ 
+
+<!-- MASTHEAD -->
+
+<div class="masthead">
+
+  <div class="masthead-meta">Leadership Coaching Canvas &nbsp;·&nbsp; AI-Enhanced Practice</div>
+
+  <div class="masthead-name">Braeden Lord</div>
+
+  <div class="masthead-title">Chief Executive Officer, Starbucks Australia</div>
+
+  <div class="masthead-tags">
+
+    <span class="tag">Session 2 · 23 April 2026</span>
+
+    <span class="tag">Innovation & Leadership Development</span>
+
+    <span class="tag">Second Chair Protocol</span>
+
+  </div>
+
+</div>
+
+ 
+
+<!-- BODY -->
+
+<div class="canvas-body">
+
+ 
+
+  <!-- 1. VISION -->
+
+  <div class="section">
+
+    <div class="section-label">01 &nbsp; Vision</div>
+
+    <div class="section-heading">What this leader is building</div>
+
+    <div class="section-body">
+
+      <p>An organisation that is culturally embedded in innovation — not individual-dependent, not driven from the top, but enterprise-wide and self-sustaining. A Starbucks Australia where ten district managers developing a hundred store managers is the mechanism of transformation, and where learning and development cascade as naturally as commercial accountability does.</p>
+
+    </div>
+
+ 
+
+    <div class="pull-quote" style="margin-top:24px;">
+
+      <p>"The 10 to 100 — 10 district managers to 100 store managers. Then you're a long way down the road in store excellence."</p>
+
+    </div>
+
+  </div>
+
+ 
+
+  <!-- 2. LEADERSHIP STRENGTHS / WATCH -->
+
+  <div class="section">
+
+    <div class="section-label">02 &nbsp; Leadership Profile</div>
+
+    <div class="section-heading">Strengths and edges to watch</div>
+
+    <div class="two-col">
+
+      <div>
+
+        <div class="block-label">Demonstrated strengths</div>
+
+        <div class="pill-row">
+
+          <span class="pill pill-strength">Executional excellence</span>
+
+          <span class="pill pill-strength">Systemic thinking</span>
+
+          <span class="pill pill-strength">Transparent communication</span>
+
+          <span class="pill pill-strength">Structured problem decomposition</span>
+
+          <span class="pill pill-strength">Strategic ambition</span>
+
+          <span class="pill pill-strength">Culture through systems</span>
+
+          <span class="pill pill-strength">Self-awareness</span>
+
+          <span class="pill pill-strength">Learning orientation</span>
+
+        </div>
+
+        <div style="margin-top: 16px;" class="block-body">
+
+          Braeden's operational DNA is a genuine asset. The instinct to build processes, create structure, and measure outcomes is not a liability — it is the foundation on which a serious innovation culture can be built. The risk is only if it becomes the only register.
+
+        </div>
+
+      </div>
+
+      <div>
+
+        <div class="block-label">Development edges to watch</div>
+
+        <div class="pill-row">
+
+          <span class="pill pill-watch">Driving vs. building</span>
+
+          <span class="pill pill-watch">Delegation by framing</span>
+
+          <span class="pill pill-watch">Innovation fluency gap</span>
+
+          <span class="pill pill-watch">Ambiguity tolerance</span>
+
+          <span class="pill pill-watch">Front-end discipline</span>
+
+        </div>
+
+        <div style="margin-top: 16px;" class="block-body">
+
+          Braeden's primary edge is the shift from chief executor to culture architect. He recognises it himself. The question is not whether to make this shift but <em>when</em> driving is appropriate and when it becomes a constraint — and building the habit of asking that question in real time.
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+ 
+
+  <!-- 3. INNOVATION MATURITY SCORES -->
+
+  <div class="section">
+
+    <div class="section-label">03 &nbsp; Innovation Maturity</div>
+
+    <div class="section-heading">Self-assessed pipeline performance</div>
+
+    <div class="section-body" style="margin-bottom: 20px;">
+
+      Braeden rated Starbucks Australia's innovation pipeline across six phases. Relative strength sits in the execution phases; material weakness at both ends — front-end definition and back-end capture. This is the classic pattern for operationally strong organisations making the transition to genuine innovation capability.
+
+    </div>
+
+ 
+
+    <div class="score-grid" id="scoreGrid">
+
+      <div class="score-cell">
+
+        <div class="score-cell-label">Opportunity Radar</div>
+
+        <div class="score-cell-score">5–6 <span>/ 10</span></div>
+
+        <div class="score-bar-track"><div class="score-bar-fill" style="width: 0%" data-width="55%"></div></div>
+
+        <div class="score-cell-note">Moderate. Reactive rather than proactive signal-scanning. Good instinct for obvious opportunities.</div>
+
+      </div>
+
+      <div class="score-cell">
+
+        <div class="score-cell-label">Problem Definition</div>
+
+        <div class="score-cell-score">3–4 <span>/ 10</span></div>
+
+        <div class="score-bar-track"><div class="score-bar-fill" style="width: 0%" data-width="35%"></div></div>
+
+        <div class="score-cell-note">Weakest phase. Creates downstream inconsistency. Size-of-prize rarely quantified at outset.</div>
+
+      </div>
+
+      <div class="score-cell">
+
+        <div class="score-cell-label">Ideation</div>
+
+        <div class="score-cell-score">5 <span>/ 10</span></div>
+
+        <div class="score-bar-track"><div class="score-bar-fill" style="width: 0%" data-width="50%"></div></div>
+
+        <div class="score-cell-note">Adequate. Insufficient cross-functionality. Tendency toward premature convergence on first viable option.</div>
+
+      </div>
+
+      <div class="score-cell">
+
+        <div class="score-cell-label">MVP Development</div>
+
+        <div class="score-cell-score">6 <span>/ 10</span></div>
+
+        <div class="score-bar-track"><div class="score-bar-fill" style="width: 0%" data-width="60%"></div></div>
+
+        <div class="score-cell-note">Reasonably strong. Protein example showed risk of over-engineering before trial.</div>
+
+      </div>
+
+      <div class="score-cell">
+
+        <div class="score-cell-label">Trial Execution</div>
+
+        <div class="score-cell-score">6–7 <span>/ 10</span></div>
+
+        <div class="score-bar-track"><div class="score-bar-fill" style="width: 0%" data-width="65%"></div></div>
+
+        <div class="score-cell-note">Strongest phase. Operational DNA shows. Casual labour and protein trials both well-run.</div>
+
+      </div>
+
+      <div class="score-cell">
+
+        <div class="score-cell-label">Capture & Scale</div>
+
+        <div class="score-cell-score">4 <span>/ 10</span></div>
+
+        <div class="score-bar-track"><div class="score-bar-fill" style="width: 0%" data-width="40%"></div></div>
+
+        <div class="score-cell-note">Significant gap. Pipeline stalls before full value is extracted. Learning rarely documented systematically.</div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+ 
+
+  <!-- 4. CURRENT PILOTS -->
+
+  <div class="section">
+
+    <div class="section-label">04 &nbsp; Active Pilots</div>
+
+    <div class="section-heading">Three test-and-learn initiatives</div>
+
+    <div class="three-col">
+
+      <div>
+
+        <div class="block-label">Pilot 01</div>
+
+        <div class="block-heading">Casual Labour</div>
+
+        <div class="block-body">Four weeks in with strong early results. Benchmarking cohort needs refinement. The size-of-prize was not quantified upfront — Braeden identified this as having held the team back from challenging timelines. Next step: PG to present expanded trial design within two weeks, with Melbourne CBD as the candidate geography.</div>
+
+        <div style="margin-top: 12px;">
+
+          <span class="pill pill-focus">Expand trial</span>
+
+          <span class="pill pill-watch">Redefine benchmark</span>
+
+        </div>
+
+      </div>
+
+      <div>
+
+        <div class="block-label">Pilot 02</div>
+
+        <div class="block-heading">Protein Range</div>
+
+        <div class="block-body">Rated 7/10 overall. Strong front-end definition and swift identification as a winner. Miss: over-engineering before trial — too much refinement before go-to-market. AP approval received. Finished product closely resembles first in-market trial, raising the question of whether refining added value. Key learning: speed to trial matters more than finish at MVP stage.</div>
+
+        <div style="margin-top: 12px;">
+
+          <span class="pill pill-strength">Implementation approved</span>
+
+          <span class="pill pill-watch">Speed lesson captured</span>
+
+        </div>
+
+      </div>
+
+      <div>
+
+        <div class="block-label">Pilot 03</div>
+
+        <div class="block-heading">Cup Marking</div>
+
+        <div class="block-body">Pete-led, entered the pipeline informally. Good operational energy but missed the intake discipline — no defined success criteria, no original benchmarks, no formal process entry. Now brought into structure via a 15-minute intake form. A useful red flag: the culture currently makes it easier to start a trial than to scope one properly.</div>
+
+        <div style="margin-top: 12px;">
+
+          <span class="pill pill-watch">Retrofit structure</span>
+
+          <span class="pill pill-focus">Intake form deployed</span>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+ 
+
+  <!-- 5. KEY INSIGHT -->
+
+  <div class="section">
+
+    <div class="section-label">05 &nbsp; Key Insight</div>
+
+    <div class="section-heading">The size-of-prize principle</div>
+
+    <div class="section-body">
+
+      <p>The most important moment in the session. Braeden identified it himself: failing to quantify the prize for casual labour had held the team back from challenging timelines and being more demanding about progress. Without a defined prize, the organisation lacks the urgency to accelerate when results warrant it and the clarity to deprioritise when they don't.</p>
+
+      <p style="margin-top:12px;">This is not a project management insight — it is a leadership one. It applies across everything the organisation is building.</p>
+
+    </div>
+
+    <div class="edge-box" style="margin-top: 24px;">
+
+      <p>
+
+        <strong>Standing discipline going forward:</strong> For every initiative entering the pipeline, the team defines the prize — quantified where possible — before any trial begins. This single habit, consistently applied, addresses the front-end weakness and creates natural velocity when results are strong.
+
+      </p>
+
+    </div>
+
+  </div>
+
+ 
+
+  <!-- 6. DEVELOPMENT OBJECTIVES -->
+
+  <div class="section">
+
+    <div class="section-label">06 &nbsp; Development Objectives</div>
+
+    <div class="section-heading">Three priorities for the next phase</div>
+
+    <div class="three-col">
+
+      <div class="obj-card obj-1">
+
+        <div class="obj-number">01</div>
+
+        <div class="obj-title">Innovation Fluency</div>
+
+        <div class="obj-body">Develop the ability to articulate what excellent innovation practice looks like with the same confidence Braeden brings to operational excellence. Not comprehensive knowledge — fluency. The ability to name it, recognise it, and develop others toward it.</div>
+
+        <div class="obj-indicator-label">Progress indicator</div>
+
+        <div class="obj-indicator">Can describe 3–4 characteristics of excellent innovation with examples. Begins developing others using this language.</div>
+
+      </div>
+
+      <div class="obj-card obj-2">
+
+        <div class="obj-number">02</div>
+
+        <div class="obj-title">Delegation by Trust</div>
+
+        <div class="obj-body">Shift from delegation by framing (solving then handing over) to delegation by trust (handing over the problem). Build others' ownership rather than their alignment with Braeden's prior framing.</div>
+
+        <div class="obj-indicator-label">Progress indicator</div>
+
+        <div class="obj-indicator">Regular reflection on 'what did I drive this week that someone else could have owned?' Evidence of team initiating and resolving without prior framing.</div>
+
+      </div>
+
+      <div class="obj-card obj-3">
+
+        <div class="obj-number">03</div>
+
+        <div class="obj-title">Culture Architecture</div>
+
+        <div class="obj-body">Translate the cascade vision into a deliberate, structured programme — not a parallel activity. The learning and development agenda should be as structured and measured as the commercial agenda.</div>
+
+        <div class="obj-indicator-label">Progress indicator</div>
+
+        <div class="obj-indicator">Development conversations with direct reports are regular, structured, documented. Second chair deployed as a team-wide methodology.</div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+ 
+
+  <!-- 7. LIVE QUESTIONS -->
+
+  <div class="section">
+
+    <div class="section-label">07 &nbsp; Live Questions</div>
+
+    <div class="section-heading">For Braeden to hold between sessions</div>
+
+    <div class="question-list">
+
+      <div class="question-item">
+
+        <div class="q-mark">—</div>
+
+        <div class="q-text">Where, in the next two weeks, will you find yourself driving something that someone else could own? What will you do when you notice it?</div>
+
+      </div>
+
+      <div class="question-item">
+
+        <div class="q-mark">—</div>
+
+        <div class="q-text">What does it feel like to let go of driving — and what, if anything, makes that difficult?</div>
+
+      </div>
+
+      <div class="question-item">
+
+        <div class="q-mark">—</div>
+
+        <div class="q-text">How would you describe to a new leadership team member what excellent innovation practice looks like at Starbucks Australia? Could you answer that question with the same ease you'd describe executional excellence?</div>
+
+      </div>
+
+      <div class="question-item">
+
+        <div class="q-mark">—</div>
+
+        <div class="q-text">When the May 19th session ends, what do you want the team to have discovered — as distinct from what you want them to have been told?</div>
+
+      </div>
+
+      <div class="question-item">
+
+        <div class="q-mark">—</div>
+
+        <div class="q-text">What is it actually like to be you leading this organisation right now?</div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+ 
+
+  <!-- 8. FORWARD PLAN -->
+
+  <div class="section">
+
+    <div class="section-label">08 &nbsp; Forward Plan</div>
+
+    <div class="section-heading">Next three sessions</div>
+
+    <div class="two-col">
+
+      <div>
+
+        <div class="timeline">
+
+          <div class="timeline-item">
+
+            <div class="timeline-date">Session 3 · May 2026</div>
+
+            <div class="timeline-session">Post-19th debrief & personal register</div>
+
+            <div class="timeline-desc">How did the team session land? What surprised you? Where were you still driving? First deliberate exploration of Braeden's personal experience of leading this organisation.</div>
+
+          </div>
+
+          <div class="timeline-item">
+
+            <div class="timeline-date">Session 4 · June 2026</div>
+
+            <div class="timeline-session">Leadership development architecture</div>
+
+            <div class="timeline-desc">How is Pete developing? What does Braeden's development conversation with each direct report actually look like? Draft architecture for the 10-to-100 cascade. Second chair as team-wide tool.</div>
+
+          </div>
+
+          <div class="timeline-item">
+
+            <div class="timeline-date">Session 5 · August 2026</div>
+
+            <div class="timeline-session">Innovation maturity review & mid-point</div>
+
+            <div class="timeline-desc">Re-score the pipeline. What has changed? Honest read on delegation by trust progress. Revised objectives for H2. Possible 360 stakeholder feedback design.</div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+ 
+
+      <div>
+
+        <div class="block-label">Immediate horizon</div>
+
+        <div class="block-heading">Before the next session</div>
+
+        <div class="block-body" style="margin-bottom: 20px;">
+
+          <strong style="color: var(--navy);">May 19th Leadership Team Session.</strong> The most important design question is not what Braeden presents — it is what the team discovers. The difference between a team endorsing a model and a team genuinely co-creating one is visible in the room and durable over time.
+
+        </div>
+
+        <div class="block-body" style="margin-bottom: 20px;">
+
+          <strong style="color: var(--navy);">Innovation reading.</strong> Two short pieces to be provided by Michael. Goal: fluency, not comprehensiveness. The ability to articulate what good looks like — with examples — at a level that supports coaching others.
+
+        </div>
+
+        <div class="block-body">
+
+          <strong style="color: var(--navy);">Second chair.</strong> The protocol is well-matched to Braeden's learning style. First deployment with a direct report development conversation to be trialled before Session 3.
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+ 
+
+</div>
+
+ 
+
+<!-- FOOTER -->
+
+<div class="canvas-footer">
+
+  <div class="footer-credit">AI-Enhanced Executive Coaching · Michael Smith</div>
+
+  <div class="footer-date">Updated 25 April 2026</div>
+
+</div>
+
+ 
+
+<script>
+
+  // Animate score bars on scroll into view
+
+  const bars = document.querySelectorAll('.score-bar-fill');
+
+  const observer = new IntersectionObserver((entries) => {
+
+    entries.forEach(entry => {
+
+      if (entry.isIntersecting) {
+
+        const bar = entry.target;
+
+        const targetWidth = bar.getAttribute('data-width');
+
+        setTimeout(() => { bar.style.width = targetWidth; }, 100);
+
+        observer.unobserve(bar);
+
+      }
+
+    });
+
+  }, { threshold: 0.2 });
+
+ 
+
+  bars.forEach(bar => observer.observe(bar));
+
+</script>
+
+ 
+
+</body>
+
+</html>
